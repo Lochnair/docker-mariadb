@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+# Make sure cont owns /data and /logs
+chown -R cont:cont /data
+chown -R cont:cont /logs
