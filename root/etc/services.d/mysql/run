@@ -1,0 +1,2 @@
+#!/usr/bin/with-contenv bash
+/usr/bin/mysqld_safe --defaults-file /config/my.cnf
