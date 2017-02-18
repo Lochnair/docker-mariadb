@@ -5,6 +5,10 @@ if [ ! -f "/config/my.cnf" ]; then
 	cp /etc/default/my.cnf /config/my.cnf
 fi
 
+# Create symlink to config from /etc/mysql
+ln -sf /config/my.cnf /etc/mysql/my.cnf
+
+# Initialize database
 if [ ! -d "/data/mysql" ]; then
 	/usr/bin/mysql_install_db --datadir=/data --defaults-file=/config/my.cnf --user=cont
 fi
