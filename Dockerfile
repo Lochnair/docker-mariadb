@@ -14,3 +14,4 @@ COPY root/ /
 
 VOLUME /config
 VOLUME /data
+VOLUME /logs
